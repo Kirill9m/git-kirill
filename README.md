@@ -1,2 +1,0 @@
-# git-kirill
-"Testing github!"
