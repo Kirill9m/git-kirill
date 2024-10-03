@@ -1,0 +1,95 @@
+/* Основной фон страницы */
+body {
+    background-color: #0a0a23; /* Темно-синий фон для всего тела страницы */
+    font-family: Arial, sans-serif; /* Современный шрифт для улучшения читаемости */
+    color: #ffffff; /* Цвет текста по умолчанию */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для игры */
+#game {
+    max-width: 500px;
+    max-height: 600px; /* Увеличена высота для лучшего размещения содержимого */
+    background-color: #ffffff; /* Белый фон для контейнера */
+    color: #0a0a23; /* Цвет текста в контейнере */
+    margin: 30px auto; /* Центрирование контейнера */
+    padding: 20px;
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для улучшения визуального восприятия */
+}
+
+/* Стиль для блока с текстом */
+#text {
+    background-color: #1a1a3c; /* Темно-синий фон для текста */
+    color: #ffffff; /* Белый цвет текста */
+    padding: 15px; /* Увеличены отступы для удобства */
+    border-radius: 8px; /* Скругленные углы */
+    margin-bottom: 10px; /* Отступ снизу */
+    font-size: 16px; /* Размер шрифта */
+}
+
+/* Стиль для статистики */
+#stats,
+#monsterStats {
+    border: 1px solid #0a0a23; /* Граница того же цвета, что и фон */
+    padding: 10px; /* Увеличены отступы для удобства */
+    border-radius: 8px; /* Скругленные углы */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стилизация кнопок */
+button {
+    cursor: pointer;
+    color: #0a0a23; /* Цвет текста кнопки */
+    background-color: #feac32; /* Основной цвет фона кнопки */
+    background-image: linear-gradient(#fecc4c, #ffac33); /* Градиентный фон */
+    border: 3px solid #feac32; /* Граница кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border-radius: 8px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s, transform 0.2s; /* Плавные переходы при наведении и нажатии */
+    margin: 5px; /* Отступы между кнопками */
+    display: flex; /* Используем Flexbox для размещения изображения и текста */
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Центрирование контента */
+    background-repeat: no-repeat; /* Запрещаем повторение фона */
+    background-size: 24px 24px; /* Размер фона */
+}
+
+/* Специфические стили для кнопок с изображениями */
+.btn-attack {
+    background-image: url('./images/attack-icon.png'); /* Путь к изображению атаки */
+    background-position: left center; /* Расположение изображения слева */
+    padding-left: 40px; /* Отступ слева для текста, чтобы он не перекрывался изображением */
+}
+
+.btn-defense {
+    background-image: url('./images/defense-icon.png'); /* Путь к изображению защиты */
+    background-position: left center; /* Расположение изображения слева */
+    padding-left: 40px; /* Отступ слева для текста, чтобы он не перекрывался изображением */
+}
+
+/* Стили для блоков с информацией о монстрах */
+#monsterStats {
+    display: none; /* Изначально скрыто */
+    background-color: #c70d0d; /* Красный фон */
+    color: #ffffff; /* Белый цвет текста */
+}
+
+/* Стилизация для адаптивности */
+@media (max-width: 600px) {
+    #game {
+        width: 100%;
+        padding: 10px; /* Уменьшение отступов на мобильных устройствах */
+    }
+
+    button {
+        font-size: 14px; /* Уменьшение размера шрифта на мобильных устройствах */
+        padding: 8px 16px; /* Уменьшение внутренних отступов */
+    }
+
+    #text, #stats, #monsterStats {
+        font-size: 14px; /* Уменьшение размера шрифта для лучшего размещения на экране */
+    }
+}
