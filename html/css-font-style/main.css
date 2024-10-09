@@ -1,0 +1,40 @@
+/* CTRL-B Hide file tree*/
+
+/* :visited, :hover, :active, :focus*/
+
+body {
+    padding: 10%;
+    font-size: 1rem;
+    /* serif - newpappers academic, monospace, cursive, fantasy, Arial, Verdana*/
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-weight: 100;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+    /* fonts.google.com */
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    /* underline, overline, line-through */
+    text-decoration: none;
+    /* capitalize, lowercase, uppercase */
+    text-transform: none;
+    /* left, right, justify */
+    text-align: left;
+    /* 3em */
+    text-indent: 0;
+    /* 1.2 standart */
+    line-height: 1.2;
+    /* 0.2em */
+    letter-spacing: 0;
+    /* 0.5em */
+    word-spacing: 0;
+    /* 100 is light, 900 is bold*/
+    font-weight: 300;
+    /* italic, oblique */
+    font-style: normal;
+
+}
