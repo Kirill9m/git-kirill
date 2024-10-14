@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.header {
+    background-color: rgba(1,4,9,255);
+    grid-column: span 13;
+    height: 60px;
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 10px;
+}
+
+.header p {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.left {
+background-color: rgba(21,27,35,255);
+grid-column: span 4;
+border-right: 1px solid rgb(102, 102, 102);
+min-height: 1000px;
+}
+
+.main {
+background-color: rgba(1,4,9,255);
+grid-column: span 9;
+padding-left: 2rem;
+padding-top: 1.5rem;
+}
+
+span, h1, p, li, h4{
+    color: #ffffff;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+
+.infoBoxes {
+    position: relative;
+   margin: 10px;
+    border: 1px solid rgb(102, 102, 102);
+    width: 80%;
+    background-color: rgba(21,27,35,255);
+    border-radius: 0.2rem;
+    margin: auto;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.infoBoxes p {
+    color: rgb(99, 105, 105);
+    padding-top: 10px;
+}
+
+ul {
+    padding-left: 15%;
+    margin: 10px;
+    list-style-image: url(../git/fil/listL.png);
+    
+}
+
+ol{
+    list-style:decimal;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+div>input {
+    background-color: black;
+    border-radius: 0.2rem;
+    border: 1px solid  rgb(102, 102, 102);
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+aside input {
+    background-color: black;
+    border-radius: 0.2rem;
+    border: 1px solid  rgb(102, 102, 102);
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.menu {
+    margin-top: 15px;
+    margin-left: 25px;
+    color: #ffffff;
+}
+
+button {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #29903b;
+    border-radius: 0.2rem;
+    color: #ffffff;
+    border-color: #29903b;
+}
+
+li {
+    padding: 3px;
+}
